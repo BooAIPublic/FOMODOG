@@ -6,9 +6,8 @@ WORKDIR /src
 
 # Copy your source code to the build container
 COPY . ./
-
+RUN dotnet test ./FomoDog.Tests/FomoDog.Tests.csproj
 #WTF i dont know why this is needed but it works
-
 
 WORKDIR /src
 # Restore NuGet packages
